@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeng Woon's | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="notification">
+        A new version of this website is available. Click <a id="reload">here</a> to update.
+    </div>
+
+    <div id="background-image">
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+
+            <a href="#" class="logo">jengwoon</a>
+
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links current-link">HOME</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-links">ABOUT</a>
+                </li>
+                <li>
+                    <a href="skills.html" class="nav-links">SKILLS</a>
+                </li>
+                <li>
+                    <a href="work.html" class="nav-links">WORK</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-links">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="background-content">
+            <h1 style="padding:30px;" data-aos="zoom-out">Welcome to my webpage.</h1>
+        </div>
+
+        <a href="#all-contents" class="scroll-down">
+            <i class="fas fa-angle-double-down"></i>
+        </a>
+    </div>
+    
+    <div id="all-contents">
+        <div id="content1">
+            <img src="home/home-me.jpg" id="content1-image"/>
+            <div id="content1-info">
+                <h1>Tan Jeng Woon</h1>
+                <p style="text-align: justify;">
+                    Good day folks! Nice to meet you here at my very own webpage! Here are a 
+                    few fun facts about myself! I am still studying and I hope to be able to pursue 
+                    a future career in the healthcare industry. I love playing sports, have a side 
+                    hobby of taking photographs and I am easily intrigued by beautiful sceneries across 
+                    the world.
+                </p>
+            </div>
+        </div>
+            
+        <div id="content2">
+            <h1>What I have experienced & what I can contribute in</h1>
+            <p id="content2-info">
+                To know more about me and the various skills that I possess, you can feel free to check out 
+                my profile! I hope that my skillsets are relevant and applicable, such that I can contribute 
+                to the best of my abilities.
+            </p>
+            <br/>
+            <br/>
+            <a href="skills.html" id="clickme">MY SKILLS</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="registerServiceWorker.js"></script>
+
+</body>
+</html>

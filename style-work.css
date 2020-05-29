@@ -1,0 +1,93 @@
+#background-image{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/camera.jpg);
+    /* filter: grayscale(30%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 51% 50%; 
+    height: 100%;
+    position: relative;
+}
+
+#background-content{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3.8vh;
+    line-height: 9vh;
+    text-shadow: 2px 2px grey;
+}
+
+.scroll-down{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease-out;
+}
+
+.scroll-down:hover{
+    color: rgba(255, 255, 255, 1);
+    transform: translate(-50%, 1%);
+}
+
+/* all contents */
+#all-contents{
+    padding: 100px 50px 100px 50px;
+}
+
+/* headings */
+#headings{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* images */
+.images{
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.images:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid black; */
+}
+
+@media only screen and (max-width:1200px) {
+    .images{
+        width: 30%;
+    }
+    @media only screen and (max-width:600px) {
+        #all-contents{
+            padding: 60px 50px 60px 50px;
+        }
+        .images{
+            width: 400px;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .row{
+            flex-direction: column;
+        }
+    }
+}
+
+

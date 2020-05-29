@@ -1,0 +1,146 @@
+/* index.html reload */
+#notification {
+    display: none;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#notification.show {
+    display: block;
+}
+
+#reload{
+  font-weight: bold;
+  cursor: pointer;
+  font-style: italic;
+}
+
+#reload:hover{
+  color: blue;
+  text-decoration: underline;
+}
+
+/* background */
+
+#background-image{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),url(home/buildings.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+    height: 100%;
+    position: relative;
+}
+
+#background-content{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3.8vh;
+    line-height: 9vh; 
+    text-shadow: 2px 2px grey;
+}
+
+.scroll-down{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease-out;
+}
+
+.scroll-down:hover{
+    color: rgba(255, 255, 255, 1);
+    transform: translate(-50%, 1%);
+}
+
+/* intro of myself */
+#content1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    /* border: 1px solid black; */
+}
+
+#content1-image{
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#content1-info{
+    margin-left: 60px;
+    width: 500px;
+    /* border: 1px solid black; */
+}
+
+/* skills */
+#content2{
+    background-color: rgb(247, 230, 214);
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 110px;
+}
+
+#content2-info{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: justify; */
+}
+
+#clickme{
+    text-decoration:none;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    border: 1px solid rgb(226, 171, 107);
+}
+
+#clickme:hover{
+    background-color: black;
+    color: rgb(226, 171, 107);
+}
+
+@media only screen and (max-width:1200px) {
+    /* #all-contents{
+        flex-direction: column;
+        font-size: 20px;
+    } */
+    #content1-info{
+        margin-left: 0;
+        text-align: center;
+        width: auto;
+    }
+
+    @media only screen and (max-width:950px){
+        #content2-info{
+            width: auto;
+        }
+
+    } 
+    @media only screen and (max-width:500px) {
+        #content1-image{
+            width: 100%;
+            height: auto;
+        }
+        #content1{
+            padding: 60px;
+        }
+        #content2{
+            padding: 60px;
+            padding-bottom: 80px;
+            text-align: justify;
+        }
+    }
+} 

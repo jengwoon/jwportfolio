@@ -1,0 +1,105 @@
+#background-image{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url(contact/bulb.jpg);
+    /* filter: grayscale(30%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 75% 50%; 
+    height: 100%;
+    position: relative;
+}
+
+#background-content{
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 3.8vh;
+    line-height: 9vh;
+    text-shadow: 2px 2px grey;
+}
+
+.scroll-down{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease-out;
+}
+
+.scroll-down:hover{
+    color: rgba(255, 255, 255, 1);
+    transform: translate(-50%, 1%);
+}
+
+/* section1 */
+#section1{
+    padding: 100px 40px 80px 40px;
+}
+/* avatar */
+.avatar-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.avatar-image{
+    vertical-align: middle;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* headings */
+#headings{
+    text-align: center;
+}
+
+/* contact contents */
+#all-contact-contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.contact-contents{
+    width: 250px;
+    height: auto;
+    padding: 20px 50px 40px 50px;
+    /* seperate the contents */
+    margin: 20px 10px 20px 10px;
+    text-align: justify;
+    border: 1px solid rgb(226, 171, 107);
+}
+
+.clickme{
+    color: rgb(226, 171, 107);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-contents:hover{
+    background-color: black;
+    color: rgb(202, 196, 186);  
+}
+
+.contact-contents:hover .content-heading{
+    color: white;
+}
+
+@media only screen and (max-width:500px){
+    #section1{
+        padding: 60px 40px 40px 40px;
+    }
+}
